@@ -1,3 +1,16 @@
+/*!
+ * vue-client-only v0.0.0-semantic-release
+ * (c) 2021-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-no-ssr v1.1.1
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+
 /**
  * @license
  * Copyright 2017 Google LLC
@@ -83,20 +96,6 @@
  * limitations under the License.
  */
 
-
-/*!
- * vue-client-only v0.0.0-semantic-release
- * (c) 2021-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-/*!
- * vue-no-ssr v1.1.1
- * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-
 /**
  * @license
  * Copyright 2020 Google LLC.
@@ -132,7 +131,6 @@
  * limitations under the License.
  */
 
-
 /**
  * @license
  * Copyright 2020 Google LLC
@@ -149,7 +147,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /**
  * @license
