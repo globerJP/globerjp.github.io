@@ -1,4 +1,139 @@
 /**
+ * @name ranges-apply
+ * @fileoverview Take an array of string index ranges, delete/replace the string according to them
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-apply/}
+ */
+
+/**
+ * @name ranges-merge
+ * @fileoverview Merge and sort string index ranges
+ * @version 7.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-merge/}
+ */
+
+/**
+ * @name ranges-push
+ * @fileoverview Gather string index ranges
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-push/}
+ */
+
+/**
+ * @name ranges-sort
+ * @fileoverview Sort string index ranges
+ * @version 4.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-sort/}
+ */
+
+/**
+ * @name string-collapse-leading-whitespace
+ * @fileoverview Collapse the leading and trailing whitespace of a string
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/string-collapse-leading-whitespace/}
+ */
+
+/**
+ * @name string-strip-html
+ * @fileoverview Strips HTML tags from strings. No parser, accepts mixed sources.
+ * @version 8.3.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/string-strip-html/}
+ */
+
+
+/*!
+    * tiptap v1.32.1
+    * (c) 2021 überdosis GbR (limited liability)
+    * @license MIT
+    */
+
+/*!
+    * tiptap-commands v1.17.0
+    * (c) 2021 überdosis GbR (limited liability)
+    * @license MIT
+    */
+
+/*!
+    * tiptap-extensions v1.35.1
+    * (c) 2021 überdosis GbR (limited liability)
+    * @license MIT
+    */
+
+/*!
+    * tiptap-utils v1.13.0
+    * (c) 2021 überdosis GbR (limited liability)
+    * @license MIT
+    */
+
+/*!
+ * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*!
+ * isobject <https://github.com/jonschlinkert/isobject>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-client-only v0.0.0-semantic-release
+ * (c) 2021-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-no-ssr v1.1.1
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+//! moment.js
+
+
+/*!
+  * vue-router v3.5.4
+  * (c) 2022 Evan You
+  * @license MIT
+  */
+
+/*!
+ * Vue.js v2.7.8
+ * (c) 2014-2022 Evan You
+ * Released under the MIT License.
+ */
+
+/*!
+ * vuex v3.6.2
+ * (c) 2021 Evan You
+ * @license MIT
+ */
+
+
+/**!
+ * Sortable 1.10.2
+ * @author	RubaXa   <trash@rubaxa.org>
+ * @author	owenm    <owen23355@gmail.com>
+ * @license MIT
+ */
+
+
+/**
  * @license
  * Copyright 2017 Google LLC
  *
@@ -84,59 +219,6 @@
  */
 
 
-/*!
-    * tiptap v1.32.1
-    * (c) 2021 überdosis GbR (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-commands v1.17.0
-    * (c) 2021 überdosis GbR (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-extensions v1.35.1
-    * (c) 2021 überdosis GbR (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-utils v1.13.0
-    * (c) 2021 überdosis GbR (limited liability)
-    * @license MIT
-    */
-
-/*!
- * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
- *
- * Copyright (c) 2014-2017, Jon Schlinkert.
- * Released under the MIT License.
- */
-
-/*!
- * isobject <https://github.com/jonschlinkert/isobject>
- *
- * Copyright (c) 2014-2017, Jon Schlinkert.
- * Released under the MIT License.
- */
-
-/*!
- * vue-client-only v0.0.0-semantic-release
- * (c) 2021-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-/*!
- * vue-no-ssr v1.1.1
- * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-//! moment.js
-
-
 /**
  * @license
  * Lodash <https://lodash.com/>
@@ -146,25 +228,39 @@
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
 
-
-/*!
-  * vue-router v3.5.4
-  * (c) 2022 Evan You
-  * @license MIT
-  */
-
-/*!
- * Vue.js v2.7.8
- * (c) 2014-2022 Evan You
- * Released under the MIT License.
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
-/*!
- * vuex v3.6.2
- * (c) 2021 Evan You
- * @license MIT
+/**
+ * @license
+ * Copyright 2018 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
-
 
 /**
  * @license
@@ -186,7 +282,24 @@
 
 /**
  * @license
- * Copyright 2018 Google LLC
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2020 Google LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -216,84 +329,4 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
-
-
-/**
- * @license
- * Copyright 2020 Google LLC.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-/**!
- * Sortable 1.10.2
- * @author	RubaXa   <trash@rubaxa.org>
- * @author	owenm    <owen23355@gmail.com>
- * @license MIT
- */
-
-
-/**
- * @name ranges-apply
- * @fileoverview Take an array of string index ranges, delete/replace the string according to them
- * @version 5.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-apply/}
- */
-
-/**
- * @name ranges-merge
- * @fileoverview Merge and sort string index ranges
- * @version 7.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-merge/}
- */
-
-/**
- * @name ranges-push
- * @fileoverview Gather string index ranges
- * @version 5.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-push/}
- */
-
-/**
- * @name ranges-sort
- * @fileoverview Sort string index ranges
- * @version 4.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-sort/}
- */
-
-/**
- * @name string-collapse-leading-whitespace
- * @fileoverview Collapse the leading and trailing whitespace of a string
- * @version 5.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/string-collapse-leading-whitespace/}
- */
-
-/**
- * @name string-strip-html
- * @fileoverview Strips HTML tags from strings. No parser, accepts mixed sources.
- * @version 8.3.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/string-strip-html/}
  */
