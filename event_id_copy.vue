@@ -129,7 +129,7 @@
 
 <script>
 import { mapActions, mapMutations, mapGetters, mapState } from "vuex";
-import Spinner from "../../components/Spinner.vue";
+import Spinner from '@/components/LoadingSpinner'
 import Carousel from '../../components/Carousel.vue';
 import AccountForm from "../../components/FormAccount.vue";
 export default {
