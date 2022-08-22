@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/faq/leisure/traveling", {data:[{},{}],fetch:{},mutations:[]});

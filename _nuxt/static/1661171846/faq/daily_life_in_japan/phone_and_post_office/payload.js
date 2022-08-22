@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/faq/daily_life_in_japan/phone_and_post_office", {data:[{},{}],fetch:{},mutations:[]});
