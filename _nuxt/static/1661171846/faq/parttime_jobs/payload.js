@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/faq/parttime_jobs", {data:[{},{}],fetch:{},mutations:[]});

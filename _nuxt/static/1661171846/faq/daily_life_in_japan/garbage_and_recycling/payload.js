@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/faq/daily_life_in_japan/garbage_and_recycling", {data:[{},{}],fetch:{},mutations:[]});
