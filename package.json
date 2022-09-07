@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hast-util-to-html": "^8.0.3"
+  }
+}
