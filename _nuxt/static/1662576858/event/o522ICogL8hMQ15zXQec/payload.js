@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/event/o522ICogL8hMQ15zXQec", {data:[{}],fetch:{},mutations:[]});
