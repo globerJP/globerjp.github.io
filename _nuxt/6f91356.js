@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[48],{1049:function(t,n,e){"use strict";e.r(n);var o={name:"IconRemove"},w=e(65),component=Object(w.a)(o,(function(){var t=this._self._c;return t("svg",{attrs:{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24"}},[t("path",{attrs:{d:"M19 13H5v-2h14v2z"}})])}),[],!1,null,null,null);n.default=component.exports}}]);
