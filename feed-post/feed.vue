@@ -26,8 +26,12 @@ export default {
     Spinner,
     Post
   },
-  data () {
+  data() {
     return {
+      emojis: {},
+      selectedEmojis: {},
+      selectedEmojiNatives: {},
+      emojiCount: {},
       currentTop: 0,
       lockScroll: true,
       savedFirstTrue: null,
@@ -84,6 +88,52 @@ export default {
     
   },
   methods: {
+    async getCommentEntries(post) {
+      const allCommentEntriesQuery = await this.$fire.firestore.collection('commentEntries')
+      .where("eventId","==",post.eventId).get()
+
+      console.log('here')
+
+      // after some time open it
+      // const creatorCommentEntriesQuery = await this.$fire.firestore.collection('commentEntries')
+      // .where("eventId","==",post.eventId)
+      // .where("creatorId","==",post.userId)
+      // .get()
+
+      // const userCommentEntries = await this.$fire.firestore.collection('commentEntries')
+      // .where("userId","==",this.user.uid)
+      // .where("")
+      let allEmojis = {}
+      let userSelectedEmojis = new Set()
+      let userSelectedEmojiNatives = new Set()
+      let emojiCount = 0
+      if (allCommentEntriesQuery.size > 0) {
+        for (const doc of allCommentEntriesQuery.docs) {
+          let id = doc.id
+          let data = doc.data()
+          let selectedEmojis = data.selectedEmojis
+          let selectedEmojiNatives = data.selectedEmojiNatives
+          if (!data.creatorId || data.creatorId === post.userId) {
+            selectedEmojis.forEach((e,i) => {
+              allEmojis[e] = allEmojis[e]? {...allEmojis[e], count: allEmojis[e].count + 1} : {count: 1, native: selectedEmojiNatives[i]}
+              emojiCount += 1
+            })
+            if (data.userId === this.user.uid) {
+              userSelectedEmojis = new Set(selectedEmojis)
+              userSelectedEmojiNatives = new Set(selectedEmojiNatives)
+            }
+          }
+        }
+      }
+
+      post['emojis'] = allEmojis
+      post['selectedEmojis'] = userSelectedEmojis
+      post['selectedEmojiNatives'] = userSelectedEmojiNatives
+      post['emojiCount'] = emojiCount
+
+      console.log(post)
+      
+    },
     // resetPostShownValue() {
     //   if (this.postShown.length >= 2*this.batchSize) {
     //     for (let i = 0; i< this.postShown.length; i++) {
@@ -190,13 +240,15 @@ export default {
               }
             })
           })
-          this.posts.push({
+          const post = {
             id,
             ...this.eventIds[data.eventId],
             ...this.userIds[data.userId],
             ...data,
             alteredComment
-          })
+          }
+          await this.getCommentEntries(post)
+          this.posts.push(post)
           // console.log('before push',cloneDeep(this.postShown))
           this.postShown.push(true)
           this.postShownValue.push({value: true})
