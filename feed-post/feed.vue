@@ -7,7 +7,7 @@
         Home page
     </NuxtLink>
   </v-container>
-  <v-container v-else class="d-flex flex-column justify-center align-center">
+  <v-container v-else class="d-flex flex-column justify-center align-center" style="width: 100%;">
     <h1 class="d-flex justify-center align-center mt-7 mb-3 mt-md-9 blue--text text-decoration-underline" style="text-align:center;width:100%"> Welcome </h1>
     <Post v-for="(post, index) of posts" v-model="postShownValue[index]" :ref="post.id" :key="post.createdAt" :post="post" class="mb-0 pa-0" />
     <Spinner v-if="isLoading" style="min-height: 90px;" />
