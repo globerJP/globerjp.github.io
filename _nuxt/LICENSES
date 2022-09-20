@@ -103,6 +103,69 @@
 
 
 /*!
+    * tiptap v1.32.1
+    * (c) 2021 überdosis GbR (limited liability)
+    * @license MIT
+    */
+
+/*!
+    * tiptap-commands v1.17.0
+    * (c) 2021 überdosis GbR (limited liability)
+    * @license MIT
+    */
+
+/*!
+    * tiptap-extensions v1.35.1
+    * (c) 2021 überdosis GbR (limited liability)
+    * @license MIT
+    */
+
+/*!
+    * tiptap-utils v1.13.0
+    * (c) 2021 überdosis GbR (limited liability)
+    * @license MIT
+    */
+
+/*!
+ * Cropper.js v1.5.12
+ * https://fengyuanchen.github.io/cropperjs
+ *
+ * Copyright 2015-present Chen Fengyuan
+ * Released under the MIT license
+ *
+ * Date: 2021-06-12T08:00:17.411Z
+ */
+
+/*!
+ * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*!
+ * isobject <https://github.com/jonschlinkert/isobject>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-client-only v0.0.0-semantic-release
+ * (c) 2021-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-no-ssr v1.1.1
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+//! moment.js
+
+
+/*!
  * vue-virtual-scroll-list v2.3.4
  * open source under the MIT license
  * https://github.com/tangbc/vue-virtual-scroll-list#readme
@@ -191,19 +254,6 @@
  */
 
 
-/*!
- *  ++++++++++++++++++++++
- *  Add to Calendar Button
- *  ++++++++++++++++++++++
- */
-
-/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
- *  Project: https://github.com/add2cal/add-to-calendar-button
- *  License: MIT with “Commons Clause” License Condition v1.0
- *
- */
-
-
 /**
  * @license
  * Copyright 2020 Google LLC
@@ -219,6 +269,19 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+
+
+/*!
+ *  ++++++++++++++++++++++
+ *  Add to Calendar Button
+ *  ++++++++++++++++++++++
+ */
+
+/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
+ *  Project: https://github.com/add2cal/add-to-calendar-button
+ *  License: MIT with “Commons Clause” License Condition v1.0
+ *
  */
 
 /**
@@ -250,69 +313,6 @@
  * (c) 2021 Evan You
  * @license MIT
  */
-
-
-/*!
-    * tiptap v1.32.1
-    * (c) 2021 überdosis GbR (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-commands v1.17.0
-    * (c) 2021 überdosis GbR (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-extensions v1.35.1
-    * (c) 2021 überdosis GbR (limited liability)
-    * @license MIT
-    */
-
-/*!
-    * tiptap-utils v1.13.0
-    * (c) 2021 überdosis GbR (limited liability)
-    * @license MIT
-    */
-
-/*!
- * Cropper.js v1.5.12
- * https://fengyuanchen.github.io/cropperjs
- *
- * Copyright 2015-present Chen Fengyuan
- * Released under the MIT license
- *
- * Date: 2021-06-12T08:00:17.411Z
- */
-
-/*!
- * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
- *
- * Copyright (c) 2014-2017, Jon Schlinkert.
- * Released under the MIT License.
- */
-
-/*!
- * isobject <https://github.com/jonschlinkert/isobject>
- *
- * Copyright (c) 2014-2017, Jon Schlinkert.
- * Released under the MIT License.
- */
-
-/*!
- * vue-client-only v0.0.0-semantic-release
- * (c) 2021-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-/*!
- * vue-no-ssr v1.1.1
- * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-//! moment.js
 
 
 /**
