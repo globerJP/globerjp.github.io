@@ -92,7 +92,6 @@ export default {
       const allCommentEntriesQuery = await this.$fire.firestore.collection('commentEntries')
       .where("eventId","==",post.eventId).get()
 
-      console.log('here')
 
       // after some time open it
       // const creatorCommentEntriesQuery = await this.$fire.firestore.collection('commentEntries')
@@ -131,7 +130,6 @@ export default {
       post['selectedEmojiNatives'] = userSelectedEmojiNatives
       post['emojiCount'] = emojiCount
 
-      console.log(post)
       
     },
     // resetPostShownValue() {
