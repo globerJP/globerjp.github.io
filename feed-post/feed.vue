@@ -1,12 +1,17 @@
 <template>
-  <v-container v-if="!user">
-    <h1>
-      You must be logged in to view this page.
-    </h1>
-    Go to <NuxtLink class="primary--text" color="blue" to="/">
-        Home page
-    </NuxtLink>
-  </v-container>
+      <v-container v-if="!user">
+      <h1>
+        You must be logged in to view this page.
+      </h1>
+      <v-btn
+        color="primary"
+        class="pa-0"
+        style="text-transform: unset !important; font-size: 16px !important;"
+        @click="handleJoin"
+        text
+        >Click here to Join</v-btn
+      >
+    </v-container>
   <v-container v-else class="d-flex flex-column justify-center align-center" style="width: 100%;">
     <h1 class="d-flex justify-center align-center mt-7 mb-3 mt-md-9 blue--text text-decoration-underline" style="text-align:center;width:100%"> Welcome </h1>
     <Post v-for="(post, index) of posts" v-model="postShownValue[index]" :ref="post.id" :key="post.createdAt" :post="post" class="mb-0 pa-0" />

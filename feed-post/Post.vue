@@ -442,10 +442,10 @@ export default {
 
 
       // after some time open it
-      const creatorCommentEntriesQuery = await this.$fire.firestore.collection('commentEntries')
-      .where("eventId","==",this.post.eventId)
-      .where("creatorId","==",this.post.userId)
-      .get()
+      // const creatorCommentEntriesQuery = await this.$fire.firestore.collection('commentEntries')
+      // .where("eventId","==",this.post.eventId)
+      // .where("creatorId","==",this.post.userId)
+      // .get()
 
       // const userCommentEntries = await this.$fire.firestore.collection('commentEntries')
       // .where("userId","==",this.user.uid)
