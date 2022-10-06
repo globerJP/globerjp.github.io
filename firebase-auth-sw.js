@@ -6,7 +6,7 @@ importScripts(
 importScripts(
   'https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js'
 )
-firebase.initializeApp({"apiKey":"AIzaSyD6qkc_k7mA6F5WayWJiP5LKEv74i9gUd4","authDomain":"glober-backend-81133.firebaseapp.com","projectId":"glober-backend-81133","storageBucket":"glober-backend-81133.appspot.com","messagingSenderId":"836188860","appId":"1:836188860:web:0a0fb03192d588fcb72eb9"})
+firebase.initializeApp({"apiKey":"AIzaSyAxJ_bnFOTw5x4FBqciPGzgddE_bbG0DIk","authDomain":"globerjp-dev.firebaseapp.com","projectId":"globerjp-dev","storageBucket":"globerjp-dev.appspot.com","messagingSenderId":"1026641403012","appId":"1:1026641403012:web:ee49199e80236a0bc5f6d1"})
 
 // Initialize authService
 const authService = firebase.auth()

@@ -10,6 +10,28 @@
     "Professional Degree",
     "Specialist Degree"
   ],
+  "universityAlterNames": {
+    "tokyo institute of technology" : [
+      "Tokyo Tech",
+      "Tokyo Institute of Technology",
+      "Titech",
+      "tokodai",
+      "東工大",
+      "東京工業大学",
+      "tokyotech",
+      "Tokyo Technology Institute",
+      "tokyo yech",
+      "Tokyo Institute if Technology"
+    ],
+    "the university of tokyo": [
+      "utokyo",
+      "東大",
+      "東京大学",
+      "university of tokyo",
+      "tokyo university",
+      "todai"
+    ]
+  },
   "majors": [
     "Accounting",
     "Acting",
