@@ -294,6 +294,15 @@ and limitations under the License.
 
 //! moment.js
 
+/**
+ * @name ranges-apply
+ * @fileoverview Take an array of string index ranges, delete/replace the string according to them
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-apply/}
+ */
+
 
 /*!
  *  ++++++++++++++++++++++
@@ -305,15 +314,6 @@ and limitations under the License.
  *  Project: https://github.com/add2cal/add-to-calendar-button
  *  License: MIT with “Commons Clause” License Condition v1.0
  *
- */
-
-/**
- * @name ranges-apply
- * @fileoverview Take an array of string index ranges, delete/replace the string according to them
- * @version 5.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-apply/}
  */
 
 
