@@ -216,7 +216,8 @@ export default {
 	async mounted() {
 		if (this.user && this.account.firstName) {
       this.currentUserId = this.user.uid
-      this.userName = this.account.firstName +' '+ this.account.lastName +' '+this.user.uid.substr(0,2)
+      // this.userName = this.account.firstName +' '+ this.account.lastName +' '+this.user.uid.substr(0,2)
+			this.userName = this.account.firstName +' '+ this.account.lastName
       await this.getUsers()
 			const db = this.$fire.firestore
 			const storageRef = this.$fire.storage.ref()
