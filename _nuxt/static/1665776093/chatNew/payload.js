@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/chatNew", {data:[{}],fetch:{},mutations:[]});
