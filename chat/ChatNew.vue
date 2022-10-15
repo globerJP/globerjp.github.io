@@ -2,122 +2,67 @@
   <div v-if="pageLoaded" class="window-container" :class="{ 'window-mobile': isDevice }">
     <client-only>
       <vue-advanced-chat
-			ref="chat"
+			ref="chatWindow"
       :height="screenHeight"
-      :show-emojis="false"
-      :show-reaction-emojis="true"
-      :username-options="{minUsers: 2, currentUser: false}"
+			:room-info-enabled="'true'"
+			@room-info="openEventPage($event.detail[0])"
 			:theme="theme"
-			:styles="styles"
+			:username-options="JSON.stringify({minUsers: 2, currentUser: false})"
+			:styles="JSON.stringify(styles)"
 			:current-user-id="currentUserId"
 			:room-id="roomId"
-			:rooms="loadedRooms"
+			:rooms="JSON.stringify(loadedRooms)"
 			:loading-rooms="loadingRooms"
-			:messages="messages"
-			:messages-loaded="messagesLoaded"
-			:user-tags-enabled="false"
 			:rooms-loaded="roomsLoaded"
+			:messages="JSON.stringify(messages)"
+			:messages-loaded="messagesLoaded"
 			:room-message="roomMessage"
-			:templates-text="templatesText"
-      :show-add-room="false"
-      :accepted-files="'image/png, image/jpeg, image/gif, application/pdf'"
-      :message-actions="messageActions"
-			@message-selection-action-handler="messageHandler"
-      @fetch-more-rooms="fetchMoreRooms"
-			@fetch-messages="fetchMessages"
-			@send-message="sendMessage"
-			@edit-message="editMessage"
-			@delete-message="deleteMessage"
-			@open-file="openFile"
-			@open-user-tag="openUserTag"
-			@send-message-reaction="sendMessageReaction"
-			@typing-message="typingMessage"
-			@toggle-rooms-list="$emit('show-demo-options', $event.opened)"
+			:message-actions="JSON.stringify(messageActions)"
+			:templates-text="JSON.stringify(templatesText)"
+			:show-add-room="'false'"
+			:user-tags-enabled="'false'"
+			:accepted-files="'image/png, image/jpeg, image/gif, application/pdf'"
+			@fetch-more-rooms="fetchMoreRooms"
+			@fetch-messages="fetchMessages($event.detail[0])"
+			@send-message="sendMessage($event.detail[0])"
+			@edit-message="editMessage($event.detail[0])"
+			@delete-message="deleteMessage($event.detail[0])"
+			@open-file="openFile($event.detail[0])"
+			@send-message-reaction="sendMessageReaction($event.detail[0])"
+			@typing-message="typingMessage($event.detail[0])"
+			@toggle-rooms-list="$emit('show-demo-options', $event.detail[0].opened)"
     >
-			
-			<template v-slot:emoji-picker="{ addEmoji }">
-				<div class="vac-emoji-wrapper">
-					<div v-click-outside="onClickOutside">
-					<div
-						class="vac-svg-button vac-emoji-reaction"
-						@click="openEmoji"
-					>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-								version="1.1"
-								width="24"
-								height="24"
-								:viewBox="`0 0 24 24`"
-							>
-								<path id="vac-icon-emoji" :d="'M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z'" />
-							</svg>
-					</div>
-
-					<div v-if="emojiOpened">
-							<div
-								class="vac-emoji-picker vac-picker-reaction"
-								:style="{
-										height: `${emojiPickerHeight}px`,
-										top: `${emojiPickerTop}px`,
-										right: `${emojiPickerRight}`,
-										display: 'initial'
-									}"
-							>
-								<PickerFast
-										ref="chat"
-										:data="emojiIndex"
-										v-if="emojiOpened"
-										class="emoji-picker"
-										title="Pick your emoji..."
-										emoji="point_down"
-										@select="e=>{addEmojiNow(e,addEmoji)}"
-									/>
-								<!-- <emoji-picker v-if="emojiOpened" ref="emojiPicker" /> -->
-							</div>
-					</div>
-					</div>
-				</div>
-		</template>
-						<!-- <template #emoji-picker-reaction-icon>
-								<v-icon>mdi-account</v-icon>
-						</template> -->
-    	<!--  <template v-slot:emoji-picker="{ emojiOpened, addEmoji }">
-				<PickerFast
-					v-show="emojiOpened"
-					:data="emojiIndex"
-					style="position: absolute; top: -425px; flex: 1"
-					title="Pick your emoji..."
-					emoji="point_down"
-					@select="addEmoji"
-				>
-				</PickerFast>
-				<button @click.stop="addEmoji({ unicode: '😁' })">
-					{{ emojiOpened }}
-				</button>
-			</template> -->
       </vue-advanced-chat>
   </client-only>
   </div>
 </template>
 <script>
+// const importChat = () => {
+//       if (process.client) {
+//         return { register: () => import('vue-advanced-chat') }
+//       }
+//       return {}
+//   }
+	//  if (process.client) {
+	// 	const { register } = await import('vue-advanced-chat') 
+	// 	register()
+	
+	// }
+
+// import { VueAdvancedChat } from 'vue-advanced-chat'
 import { parseTimestamp, isSameDay } from '@/utils/dates'
-import data from "emoji-mart-vue-fast/data/twitter.json";
 // import ChatWindow, { Rooms } from 'vue-advanced-chat'
 // import ChatWindow from 'vue-advanced-chat'
 // import 'vue-advanced-chat/dist/vue-advanced-chat.css'
 // import ChatWindow from './../../dist/vue-advanced-chat.umd.min.js'
-import { Picker as PickerFast, EmojiIndex } from "emoji-mart-vue-fast";
 
 export default {
-	components: {
-		PickerFast
-	},
 	props: {
     currentUserId: {
       type: String,
       default: ''
     },
+
     isAdmin: {
       type: Boolean || String,
       default: false
@@ -137,15 +82,6 @@ export default {
 
 	data() {
 		return {
-			clickedElem: null,
-			positionRight: true,
-			positionTop: true,
-			currMessage: {},
-			emojiPickerHeight: 320,
-			emojiPickerTop: 0,
-			emojiPickerRight: '',
-			emojiOpened: false,
-			emojiIndex: new EmojiIndex(data),
 			roomsListOpened: false,
       remainingUsersIdNameList: [],
       pageLoaded: false,
@@ -280,16 +216,6 @@ export default {
 	// 		}
 	// 	}
 	// },
-	watch: {
-		clickedElem: {
-			handler(val) {
-				console.log(val)
-				debugger
-			},
-			deep: true,
-			immediate: true
-		}
-	},
 	async mounted() {
     const db = this.$fire.firestore
     const storageRef = this.$fire.storage.ref()
@@ -302,74 +228,56 @@ export default {
     this.deleteDbField = this.$fireModule.firestore.FieldValue.delete()
 		await this.fetchRooms()
     this.pageLoaded = true
+		// document.addEventListener("DOMContentLoaded", function(event) { 
+		// 	//do work
+		// });
+		setTimeout(()=>{
+			this.addCss()
+		},200)
+		// this.$nextTick(()=> {
+					
+		// })
     
 		// this.updateUserOnlineStatus()
 	},
+	async created() {
+		const { register } = await import('vue-advanced-chat') 
+		register()
+	},
+		// async created() {
+		// 			const reg = importChat()
+		// const all = await reg.register()
+		// all.register()
+		// },
 
 	methods: {
-		messageHandler({ roomId, action, message }) {
-			console.log(message)
-		},
-		async sendMessageReaction({ reaction, remove, messageId, roomId }) {
-			firestoreService.updateMessageReactions(
-				roomId,
-				messageId,
-				this.currentUserId,
-				reaction.unicode,
-				remove ? 'remove' : 'add'
-			)
-		},
-
-		openEmoji(ev) {
-			debugger;
-			this.clickedElem = this.$refs.chat
-			this.emojiOpened = !this.emojiOpened
-			this.setEmojiPickerPosition(
-				ev.clientX,
-				ev.clientY,
-				ev.view.innerWidth,
-				ev.view.innerHeight
-			)
-		},
-		setEmojiPickerPosition(clientX, clientY, innerWidth, innerHeight) {
-			if(clientX <= innerWidth/2) {
-				this.positionRight = false
-			} else {
-				this.positionRight = true
-			}
-			const mobileSize = innerWidth < 500 || innerHeight < 700
-			const roomFooterRef = document.getElementById('room-footer')
-
-			if (!roomFooterRef) {
-				if (mobileSize) this.emojiPickerRight = '-50px'
-				return
-			}
-			if (mobileSize) {
-				this.emojiPickerRight =
-					innerWidth / 2 - (this.positionTop ? 200 : 150) + 'px'
-				this.emojiPickerTop = 100
-				this.emojiPickerHeight = innerHeight - 200
-			} else {
-				const roomFooterTop = roomFooterRef.getBoundingClientRect().top
-				const pickerTopPosition =
-					roomFooterTop - clientY > this.emojiPickerHeight - 50
-				console.log('footer', roomFooterTop, clientY, this.emojiPickerHeight, pickerTopPosition)
-				if (pickerTopPosition) this.emojiPickerTop = clientY + 10
-				else this.emojiPickerTop = clientY - this.emojiPickerHeight - 10
-
-				this.emojiPickerRight = this.positionRight
-					? '60px'
-					: ''
-
-				// console.log('pickerright',this.emojiPickerRight)
+		openEventPage(val) {
+			if (val.eventId) {
+				this.$router.push({
+                path: `/event/${val.eventId}`
+              })
 			}
 		},
-		onClickOutside() {
-			this.emojiOpened = false
-		},
- 		addEmojiNow(val, val2) {
-			this.emojiOpened = false
-			val2({unicode: val.native})
+		addCss() {
+				// const styles = {
+				// 	position: 'fixed',
+				// 	width: '100%',
+				// 	bottom: '0'
+				// }
+				// const style = document.createElement('style')
+				// style.innerHTML = styles
+				// debugger;
+				if(this.isDevice) {
+					this.$refs.chatWindow.shadowRoot.getElementById('room-footer').setAttribute('style',
+					"position:fixed; width: 100%; bottom: 0;")
+					this.$refs.chatWindow.shadowRoot.getElementById('messages-list').setAttribute('style',
+					"padding-bottom: 50px;")
+					this.$refs.chatWindow.shadowRoot.querySelectorAll('.vac-input')[0].setAttribute('style','font-size:16px !important')
+				}
+				
+				// this.$refs.chatWindow.shadowRoot.querySelectorAll('.vac-messages-container')[0].setAttribute('style',
+				// "padding-bottom:65px")
+				
 		},
 		resetRooms() {
 			this.loadingRooms = true
@@ -397,6 +305,7 @@ export default {
 			this.resetRooms()
 			await this.fetchMoreRooms()
 		},
+
 
 		async fetchMoreRooms() {
 			if (this.endRooms && !this.startRooms) return (this.roomsLoaded = true)
@@ -593,12 +502,25 @@ export default {
 					listenerQuery = listenerQuery.endAt(this.endMessages)
 				}
 
-				if (options.reset) this.messages = []
-
+				if (options.reset) {
+					console.log('here')
+					this.messages = []
+				}
+				const newMessages = []
+		
 				messages.forEach(message => {
 					const formattedMessage = this.formatMessage(room, message)
-					this.messages.unshift(formattedMessage)
+					newMessages.unshift(formattedMessage)
 				})
+
+				// use timeout to imitate async server fetched data
+				setTimeout(() => {
+					this.messages = [...newMessages, ...this.messages]
+				})
+				
+
+
+				
 
 				const listener = listenerQuery.onSnapshot(snapshots => {
 					// this.incrementDbCounter('Listen Room Messages', snapshots.size)
@@ -731,7 +653,7 @@ export default {
 			const confirmation = window.confirm('Are you sure?');
         // console.log(confirmation);
 
-      if (!confirmation) return;
+        if (!confirmation) return;
 			await this.messagesRef(roomId)
 				.doc(message._id)
 				.update({ deleted: new Date() })
@@ -1001,85 +923,7 @@ export default {
 	}
 }
 </script>
-<style lang="scss">
-.vac-svg-button {
-	max-height: 30px;
-	display: flex;
-	cursor: pointer;
-	transition: all 0.2s;
 
-	&:hover {
-		transform: scale(1.1);
-		opacity: 0.7;
-	}
-}
-.vac-emoji-wrapper {
-	position: relative;
-	float:right;
-	right: 25px;
-	padding: 5px;
-
-	.vac-emoji-reaction svg {
-		height: 22px;
-		width: 22px;
-	}
-.vac-emoji-picker {
-		position: absolute;
-		z-index: 9999;
-		bottom: 32px;
-		right: 10px;
-		width: 300px;
-		padding-top: 4px;
-		overflow: scroll;
-		box-sizing: border-box;
-		border-radius: 0.5rem;
-		background: var(--chat-emoji-bg-color);
-		box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.1),
-			0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 2px 1px rgba(0, 0, 0, 0.1);
-		scrollbar-width: none;
-
-		&::-webkit-scrollbar {
-			display: none;
-		}
-
-		&.vac-picker-reaction {
-			position: fixed;
-			top: initial;
-			right: initial;
-		}
-
-		.emoji-picker {
-			height: 100%;
-			width: 100%;
-			--emoji-size: 1.2rem;
-			--background: var(--chat-emoji-bg-color);
-			--emoji-padding: 0.4rem;
-			--border-color: var(--chat-sidemenu-border-color-search);
-			--button-hover-background: var(--chat-sidemenu-bg-color-hover);
-			--button-active-background: var(--chat-sidemenu-bg-color-hover);
-		}
-	}
-}
-</style>
-<style>
-
-@media screen and (max-width: 500px) {
-  #room-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0
-  }
-	
-	.vac-input {
-		font-size: 16px !important;
-	}
-
-  #messages-list {
-    padding-bottom: 50px;
-  }
-}
-
-</style>
 <style lang="scss" scoped>
 .window-container {
 	width: 100%;
