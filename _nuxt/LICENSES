@@ -223,6 +223,21 @@ PERFORMANCE OF THIS SOFTWARE.
 
 
 /*!
+ * vue-virtual-scroll-list v2.3.4
+ * open source under the MIT license
+ * https://github.com/tangbc/vue-virtual-scroll-list#readme
+ */
+
+
+/**!
+ * Sortable 1.10.2
+ * @author	RubaXa   <trash@rubaxa.org>
+ * @author	owenm    <owen23355@gmail.com>
+ * @license MIT
+ */
+
+
+/*!
     * tiptap v1.32.1
     * (c) 2021 überdosis GbR (limited liability)
     * @license MIT
@@ -310,34 +325,6 @@ and limitations under the License.
 
 
 /*!
- * vue-virtual-scroll-list v2.3.4
- * open source under the MIT license
- * https://github.com/tangbc/vue-virtual-scroll-list#readme
- */
-
-
-/**!
- * Sortable 1.10.2
- * @author	RubaXa   <trash@rubaxa.org>
- * @author	owenm    <owen23355@gmail.com>
- * @license MIT
- */
-
-
-/*!
- *  ++++++++++++++++++++++
- *  Add to Calendar Button
- *  ++++++++++++++++++++++
- */
-
-/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
- *  Project: https://github.com/add2cal/add-to-calendar-button
- *  License: MIT with “Commons Clause” License Condition v1.0
- *
- */
-
-
-/*!
  * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
  * Released under the MIT License.
  * https://vue-treeselect.js.org/
@@ -399,9 +386,15 @@ and limitations under the License.
 
 
 /*!
- * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
- * Released under the MIT License.
- * https://vue-treeselect.js.org/
+ *  ++++++++++++++++++++++
+ *  Add to Calendar Button
+ *  ++++++++++++++++++++++
+ */
+
+/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
+ *  Project: https://github.com/add2cal/add-to-calendar-button
+ *  License: MIT with “Commons Clause” License Condition v1.0
+ *
  */
 
 
