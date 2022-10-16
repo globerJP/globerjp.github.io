@@ -223,13 +223,6 @@ PERFORMANCE OF THIS SOFTWARE.
 
 
 /*!
- * vue-virtual-scroll-list v2.3.4
- * open source under the MIT license
- * https://github.com/tangbc/vue-virtual-scroll-list#readme
- */
-
-
-/*!
     * tiptap v1.32.1
     * (c) 2021 überdosis GbR (limited liability)
     * @license MIT
@@ -314,6 +307,13 @@ and limitations under the License.
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 //! moment.js
+
+
+/*!
+ * vue-virtual-scroll-list v2.3.4
+ * open source under the MIT license
+ * https://github.com/tangbc/vue-virtual-scroll-list#readme
+ */
 
 
 /**!
