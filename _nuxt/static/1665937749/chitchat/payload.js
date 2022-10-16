@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/chitchat", {data:[{}],fetch:{},mutations:[]});
