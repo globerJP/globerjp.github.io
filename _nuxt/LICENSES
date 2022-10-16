@@ -337,22 +337,6 @@ and limitations under the License.
  */
 
 
-/*!
- * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
- * Released under the MIT License.
- * https://vue-treeselect.js.org/
- */
-
-/**
- * @name ranges-apply
- * @fileoverview Take an array of string index ranges, delete/replace the string according to them
- * @version 5.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-apply/}
- */
-
-
 /**
  * @license
  * Copyright 2020 Google LLC
@@ -370,16 +354,6 @@ and limitations under the License.
  * limitations under the License.
  */
 
-
-/**
- * @name string-strip-html
- * @fileoverview Strips HTML tags from strings. No parser, accepts mixed sources.
- * @version 8.3.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/string-strip-html/}
- */
-
 /**
  * @license
  * Copyright 2018 Google LLC
@@ -395,6 +369,22 @@ and limitations under the License.
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+
+
+/*!
+ * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
+ * Released under the MIT License.
+ * https://vue-treeselect.js.org/
+ */
+
+/**
+ * @name ranges-apply
+ * @fileoverview Take an array of string index ranges, delete/replace the string according to them
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-apply/}
  */
 
 
