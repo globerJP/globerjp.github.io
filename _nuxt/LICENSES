@@ -303,25 +303,6 @@ and limitations under the License.
  * @license MIT
  */
 
-
-/*!
- *  ++++++++++++++++++++++
- *  Add to Calendar Button
- *  ++++++++++++++++++++++
- */
-
-/*!
- * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
- * Released under the MIT License.
- * https://vue-treeselect.js.org/
- */
-
-/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
- *  Project: https://github.com/add2cal/add-to-calendar-button
- *  License: MIT with “Commons Clause” License Condition v1.0
- *
- */
-
 /**
  * @license
  * Copyright 2020 Google LLC.
@@ -354,6 +335,25 @@ and limitations under the License.
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+
+
+/*!
+ *  ++++++++++++++++++++++
+ *  Add to Calendar Button
+ *  ++++++++++++++++++++++
+ */
+
+/*!
+ * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
+ * Released under the MIT License.
+ * https://vue-treeselect.js.org/
+ */
+
+/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
+ *  Project: https://github.com/add2cal/add-to-calendar-button
+ *  License: MIT with “Commons Clause” License Condition v1.0
+ *
  */
 
 
