@@ -167,6 +167,13 @@
 
 
 /*!
+ * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
+ * Released under the MIT License.
+ * https://vue-treeselect.js.org/
+ */
+
+
+/*!
  *  ++++++++++++++++++++++
  *  Add to Calendar Button
  *  ++++++++++++++++++++++
@@ -182,13 +189,6 @@
  *  Project: https://github.com/add2cal/add-to-calendar-button
  *  License: MIT with “Commons Clause” License Condition v1.0
  *
- */
-
-
-/*!
- * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
- * Released under the MIT License.
- * https://vue-treeselect.js.org/
  */
 
 
