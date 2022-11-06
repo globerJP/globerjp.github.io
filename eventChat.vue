@@ -29,7 +29,7 @@
     <client-only v-if="isMounted">
         <div v-if="pageLoaded" class="window-container" :class="{ 'window-mobile': isDevice }">
     <form v-if="addNewRoom" @submit.prevent="createRoom">
-			<v-select @click="runDebugger" multiple :items="allUsersIdNameList" v-model="addRoomUserIdList" type="text" placeholder="Add username" />
+			<v-select multiple :items="allUsersIdNameList" v-model="addRoomUserIdList" type="text" placeholder="Add username" />
 			<button type="submit" :disabled="disableForm || !addRoomUserIdList.length">
 				Create Room
 			</button>
@@ -244,9 +244,6 @@ export default {
     },
     handleDashboard() {
       this.$router.push({path: '/dashboard'})
-    },
-    runDebugger() {
-      // debugger
     },
     async getUsers() {
       const querySnapshot = await this.$fire.firestore
