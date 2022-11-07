@@ -1,59 +1,4 @@
 /**
- * @name ranges-apply
- * @fileoverview Take an array of string index ranges, delete/replace the string according to them
- * @version 5.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-apply/}
- */
-
-/**
- * @name ranges-merge
- * @fileoverview Merge and sort string index ranges
- * @version 7.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-merge/}
- */
-
-/**
- * @name ranges-push
- * @fileoverview Gather string index ranges
- * @version 5.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-push/}
- */
-
-/**
- * @name ranges-sort
- * @fileoverview Sort string index ranges
- * @version 4.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/ranges-sort/}
- */
-
-/**
- * @name string-collapse-leading-whitespace
- * @fileoverview Collapse the leading and trailing whitespace of a string
- * @version 5.1.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/string-collapse-leading-whitespace/}
- */
-
-/**
- * @name string-strip-html
- * @fileoverview Strips HTML tags from strings. No parser, accepts mixed sources.
- * @version 8.3.0
- * @author Roy Revelt, Codsen Ltd
- * @license MIT
- * {@link https://codsen.com/os/string-strip-html/}
- */
-
-
-/**
  * @license
  * Copyright 2017 Google LLC
  *
@@ -166,6 +111,77 @@
  */
 
 
+/**
+ * @name ranges-apply
+ * @fileoverview Take an array of string index ranges, delete/replace the string according to them
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-apply/}
+ */
+
+/**
+ * @name ranges-merge
+ * @fileoverview Merge and sort string index ranges
+ * @version 7.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-merge/}
+ */
+
+/**
+ * @name ranges-push
+ * @fileoverview Gather string index ranges
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-push/}
+ */
+
+/**
+ * @name ranges-sort
+ * @fileoverview Sort string index ranges
+ * @version 4.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-sort/}
+ */
+
+/**
+ * @name string-collapse-leading-whitespace
+ * @fileoverview Collapse the leading and trailing whitespace of a string
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/string-collapse-leading-whitespace/}
+ */
+
+/**
+ * @name string-strip-html
+ * @fileoverview Strips HTML tags from strings. No parser, accepts mixed sources.
+ * @version 8.3.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/string-strip-html/}
+ */
+
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+
 /*!
  *  ++++++++++++++++++++++
  *  Add to Calendar Button
@@ -182,13 +198,6 @@
  *  Project: https://github.com/add2cal/add-to-calendar-button
  *  License: MIT with “Commons Clause” License Condition v1.0
  *
- */
-
-
-/*!
- * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
- * Released under the MIT License.
- * https://vue-treeselect.js.org/
  */
 
 
@@ -217,6 +226,33 @@
  * vue-virtual-scroll-list v2.3.4
  * open source under the MIT license
  * https://github.com/tangbc/vue-virtual-scroll-list#readme
+ */
+
+
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @name ranges-apply
+ * @fileoverview Take an array of string index ranges, delete/replace the string according to them
+ * @version 5.1.0
+ * @author Roy Revelt, Codsen Ltd
+ * @license MIT
+ * {@link https://codsen.com/os/ranges-apply/}
  */
 
 
@@ -306,6 +342,7 @@ and limitations under the License.
 
 //! moment.js
 
+
 /**
  * @license
  * Copyright 2020 Google LLC.
@@ -322,6 +359,7 @@ and limitations under the License.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 
 /**
  * @license
@@ -341,20 +379,11 @@ and limitations under the License.
  */
 
 
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
+/*!
+ * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
+ * Released under the MIT License.
+ * https://vue-treeselect.js.org/
+ */
 
 
 /**
