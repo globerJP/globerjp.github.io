@@ -199,6 +199,7 @@ export default {
 
       this.eof = querySnapshot.empty
       this.countMiss = 0
+
       if (querySnapshot.size > 0) {
         this.lastDoc = querySnapshot.docs[querySnapshot.docs.length - 1]
         let promises = []
