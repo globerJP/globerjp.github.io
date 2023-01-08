@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/index_old2", {data:[{}],fetch:{},mutations:[]});
