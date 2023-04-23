@@ -295,25 +295,6 @@ PERFORMANCE OF THIS SOFTWARE.
 
 
 /*!
- *  ++++++++++++++++++++++
- *  Add to Calendar Button
- *  ++++++++++++++++++++++
- */
-
-/*!
- * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
- * Released under the MIT License.
- * https://vue-treeselect.js.org/
- */
-
-/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
- *  Project: https://github.com/add2cal/add-to-calendar-button
- *  License: MIT with “Commons Clause” License Condition v1.0
- *
- */
-
-
-/*!
     * tiptap v1.32.1
     * (c) 2021 überdosis GbR (limited liability)
     * @license MIT
@@ -398,6 +379,25 @@ and limitations under the License.
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 //! moment.js
+
+
+/*!
+ *  ++++++++++++++++++++++
+ *  Add to Calendar Button
+ *  ++++++++++++++++++++++
+ */
+
+/*!
+ * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
+ * Released under the MIT License.
+ * https://vue-treeselect.js.org/
+ */
+
+/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
+ *  Project: https://github.com/add2cal/add-to-calendar-button
+ *  License: MIT with “Commons Clause” License Condition v1.0
+ *
+ */
 
 
 /*!
