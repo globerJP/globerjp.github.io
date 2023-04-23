@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/faq/daily_life_in_japan/banking", {data:[{},{}],fetch:{},mutations:[]});
