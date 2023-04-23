@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/faq/job_hunting", {data:[{},{}],fetch:{},mutations:[]});

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tools/resume-builder", {data:[{}],fetch:{},mutations:[]});

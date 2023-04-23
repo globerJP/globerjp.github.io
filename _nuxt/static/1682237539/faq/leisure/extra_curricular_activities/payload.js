@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/faq/leisure/extra_curricular_activities", {data:[{},{}],fetch:{},mutations:[]});

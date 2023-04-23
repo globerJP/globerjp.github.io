@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/faq/daily_life_in_japan/medical_related", {data:[{},{}],fetch:{},mutations:[]});
