@@ -166,13 +166,6 @@
  *
  */
 
-
-/*!
- * vue-virtual-scroll-list v2.3.4
- * open source under the MIT license
- * https://github.com/tangbc/vue-virtual-scroll-list#readme
- */
-
 /**
  * @license
  * Copyright 2020 Google LLC.
@@ -214,6 +207,13 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+
+
+/*!
+ * vue-virtual-scroll-list v2.3.4
+ * open source under the MIT license
+ * https://github.com/tangbc/vue-virtual-scroll-list#readme
  */
 
 /**
