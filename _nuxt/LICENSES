@@ -62,14 +62,6 @@
  */
 
 
-/**!
- * Sortable 1.10.2
- * @author	RubaXa   <trash@rubaxa.org>
- * @author	owenm    <owen23355@gmail.com>
- * @license MIT
- */
-
-
 /**
  * @license
  * Copyright 2017 Google LLC
@@ -157,6 +149,25 @@
 
 
 /*!
+ *  ++++++++++++++++++++++
+ *  Add to Calendar Button
+ *  ++++++++++++++++++++++
+ */
+
+/*!
+ * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
+ * Released under the MIT License.
+ * https://vue-treeselect.js.org/
+ */
+
+/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
+ *  Project: https://github.com/add2cal/add-to-calendar-button
+ *  License: MIT with “Commons Clause” License Condition v1.0
+ *
+ */
+
+
+/*!
  * vue-virtual-scroll-list v2.3.4
  * open source under the MIT license
  * https://github.com/tangbc/vue-virtual-scroll-list#readme
@@ -180,6 +191,14 @@
  */
 
 
+/**!
+ * Sortable 1.10.2
+ * @author	RubaXa   <trash@rubaxa.org>
+ * @author	owenm    <owen23355@gmail.com>
+ * @license MIT
+ */
+
+
 /**
  * @license
  * Copyright 2020 Google LLC
@@ -195,13 +214,6 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
-
-
-/*!
- * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
- * Released under the MIT License.
- * https://vue-treeselect.js.org/
  */
 
 /**
@@ -229,25 +241,6 @@
  * @author Roy Revelt, Codsen Ltd
  * @license MIT
  * {@link https://codsen.com/os/string-strip-html/}
- */
-
-
-/*!
- *  ++++++++++++++++++++++
- *  Add to Calendar Button
- *  ++++++++++++++++++++++
- */
-
-/*!
- * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
- * Released under the MIT License.
- * https://vue-treeselect.js.org/
- */
-
-/*! Creator: Jens Kuerschner (https://jenskuerschner.de)
- *  Project: https://github.com/add2cal/add-to-calendar-button
- *  License: MIT with “Commons Clause” License Condition v1.0
- *
  */
 
 
@@ -306,6 +299,13 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ */
+
+
+/*!
+ * vue-treeselect v0.4.0 | (c) 2017-2019 Riophae Lee
+ * Released under the MIT License.
+ * https://vue-treeselect.js.org/
  */
 
 
